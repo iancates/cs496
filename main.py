@@ -9,8 +9,9 @@ app.config['DEBUG'] = True
 
 @app.route('/')
 def hello():
-
-    return "Test"
+  
+  return "test"
+  
 
 @app.errorhandler(404)
 def page_not_found(e):
