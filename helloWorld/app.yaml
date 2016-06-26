@@ -1,4 +1,4 @@
-application: cd ian-cates-1
+application: cd ian-cates-1/helloWorld
 runtime: python27
 api_version: 1
 threadsafe: true
