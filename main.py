@@ -22,7 +22,7 @@ def hello():
     weather = urlfetch.fetch(weather_url).content
     json_weather = json.loads(weather)  # convert string to json dict so we can parse it
     current_temp = json_weather["main"]["temp"]
-    return "Greetings from Moscow, ID. It is currently {0}, and the temperature is approximately {1} Kelvin.".format(current_time, current_temp)
+    return "Test"
 
 @app.errorhandler(404)
 def page_not_found(e):
