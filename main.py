@@ -11,6 +11,7 @@ app.config['DEBUG'] = True
 def hello():
   time_url = "http://www.timeapi.org/pdt/now?\a \b \d \I:\M:\S \Z \Y"
   current_time = urlfetch.fetch(time_url).content
+  print "test"
   return "Greetings from Moscow, ID. It is currently {0}, and the temperature is approximately Kelvin." \
            .format(current_time)
   
