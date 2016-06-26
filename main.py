@@ -1,4 +1,5 @@
 from flask import Flask
+import datetime
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
@@ -6,10 +7,12 @@ app.config['DEBUG'] = True
 # the App Engine WSGI application server.
 
 
+current_time = datetime.datetime.now().time()
+current_time.isoformat()
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'H World!'
+    return current_time
 
 
 @app.errorhandler(404)
